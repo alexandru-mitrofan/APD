@@ -1,0 +1,6 @@
+----------TEMA 1-APD-----------
+-------MITROFAN ALEXANDRU------
+-------------336CB-------------
+Pentru inceput, aloc memorie pentru vectorul de argumente
+primite si incep sa-l completez citind din fisiere numarul de argumente pentru functia f este egal cu numarul de mapperi adunat cu numarul de reduceri, pentru a delimita mapperi de reduceri am folosit o bariera ,pentru ca este necesar sa termine toti mapperi sa inceapa reduceri.
+Pentru a cauta daca este sau n putere perfecta am cautat cu cautare binara (de la 2 pana la 2^(32/k), k fiind puterea nmarului cautat).Am facut 2 cazuuri speciale pentru 1 il pune direct fara sa caute nimic, pentru ca 1 la orice putere da tot 1, iar peste 0 se sare. Am ales sa pun in functia fReducer in powerList in ordine numerele ca sa fie mai optima cautarea reducerilor care incrementeaza numaratorul de numere diferite de fiecare data cand precedentul numar din lista este diferit de cel actual.In utilis in arguments mi am creeat argumentul si am creeat functiile care ma ajuta sa umpl argmentul , stack e pentru creearea unei stive pentru fisiere,iar list este pentru creearea unei liste pentru a se pune nuumerele care respecna conditiile din enunt in ele.

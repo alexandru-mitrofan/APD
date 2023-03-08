@@ -1,0 +1,23 @@
+-------------------MITROFAN ALEXANDRU 3366CB------------------
+Am reusit inca de la inceput sa nu folosesc canalul 0-1 ,astfel
+nu am mai bagat in seama al doilea parametru dat la intrare(intrucat
+nu am facut cerinta bonus)
+1.PARTEA DE AFISARE A TOPOLOGIEI
+Pentru inceput am trimis informatia despre topologie de la 0-3-2-1
+din asta am observat ca primul coordonator care stie topologia finala este
+1 si am afisat,apoi de la 1 am trimis topologia finala la 2 si am
+afisat,apoi de la 2 am trimis topologia finala la 3 si am afisat ,apoi
+de la 3 am trimis topologia finala la 0 si am afisat, apoi am trimis 
+workerilor cine este seful lor,apoi am trimis de la fiecare coordonator topologia
+finala la fiecare worker pe care il supervizeaza si am afisat-o.
+
+2.PARTEA CU INMULTIREA ELEMENTELOR CU 5
+Cu ajutorul matricei de topologie am reusit sa fac un vector care indica
+cati workeri sunt pe fiecare cluster si numarl total de workeri.
+Am trimis N si vectorul v la fiecare coordonator, dupa care trimit la fiecare
+worker bucata pe care trebuie sa o prelucreze, apoi workerii primesc secventa
+si incep sa o prelucreze(sa o inmulteasca cu 5) si o trimit mai departe la
+coordonatori.Coorrdonatorii alipesc secventele de la wokeri si dupa, 
+coordonatorul 1 o trimite la 2, coordonatorul 2 alipeste vectorul primit
+cu ce a obbtinut de la workeri lui in ordinea buna s.a.m.d pana se ajunge la 
+secvanta finala facuta de coordonatorul 0, dupa secventa este afisata.
